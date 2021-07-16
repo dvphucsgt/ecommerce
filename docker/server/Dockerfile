@@ -12,6 +12,10 @@ RUN buildDeps=" \
       git \
     " \
  && apt-get update \
+ && apt-get install -y nodejs \
+ && apt-get install -y npm \
+ && apt-get install -y zip \
+ && apt-get install -y unzip \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends $buildDeps $runtimeDeps \
  && docker-php-ext-install bcmath mbstring mysqli opcache pdo_mysql zip \
  && apt-get clean \

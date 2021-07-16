@@ -40,7 +40,7 @@ services:
     image: phpmyadmin/phpmyadmin
     environment:
       - PMA_ARBITRARY=1
-      - PMA_HOST=website-news-db
+      - PMA_HOST=ecommerce-db
       - PMA_USER=root
       - PMA_PASSWORD=root
     ports:
